@@ -1,11 +1,13 @@
 import React from 'react'
-
-function PopUp() {
+import './PopUp.css'
+function PopUp({cls,visible}) {
   return (
-    <div className='border-2 border-black  p-2 rounded-md fixed top-16 right-5' >
-        Text copied to your clipboard.
+    <div className={`border-2 ${visible} glow border-white text-white p-2 rounded-md fixed top-16 right-5`} >
+        {cls} copied to your clipboard.
     </div>
   )
 }
 
 export default PopUp
+
+
