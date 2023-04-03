@@ -10,7 +10,7 @@ function App() {
   const [visible,setVisible] = useState('hidden');
   const [search,setSearch] = useState('');
   return (
-    <div className="">
+    <div className="" >
     {/* <div className="" style={{'background':'#063b49'}}> */}
       <Header setSearch ={setSearch} search={search}/>
       <PopUp cls={copyClass} visible={visible} />

@@ -236,6 +236,17 @@ export const data = [{
     ]
 },
 {
+    'title': 'Column Gutters',
+    'classes': [
+        'slds-gutters',
+        'slds-gutters_x-small',
+        'slds-gutters_small',
+        'slds-gutters_medium',
+        'slds-gutters_large',
+        'slds-gutters_x-large'
+    ]
+},
+{
     'title': 'Grid Column Size',
     'classes': [
         'slds-col',
@@ -257,17 +268,7 @@ export const data = [{
         'slds-size_11-of-12',
     ]
 },
-{
-    'title': 'Column Gutters',
-    'classes': [
-        'slds-gutters',
-        'slds-gutters_x-small',
-        'slds-gutters_small',
-        'slds-gutters_medium',
-        'slds-gutters_large',
-        'slds-gutters_x-large'
-    ]
-},
+
 
 
 ]
