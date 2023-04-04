@@ -21,6 +21,7 @@ function App() {
 
         if(d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
             return  <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} /> ;
+        return  '';
       })}   
       </div>
     </div>
