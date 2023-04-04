@@ -3,7 +3,7 @@ import './header.css';
 function Header({setSearch,search}) {
     return (
         <div>
-            <nav className=' pt-2 pb-2 shadow pr-10 pl-5 fixed top-0 w-full  flex justify-between items-center'>
+            <nav className=' pt-2 pb-2 shadow pr-10 pl-5 fixed top-0 w-full  flex justify-between items-center z-50'>
                 <h1 className="text-2xl font-bold clas text-black ubuntuMono ">SLDS</h1>
                 <div>
                     <input onChange={(e)=>setSearch(e.target.value)} value={search} type="text" className=' focus:outline-none text-gray-600 px-2 py-1 mx-2 border-2  rounded-md border-black'   />
