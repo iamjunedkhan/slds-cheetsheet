@@ -5,7 +5,7 @@ import Header from './Components/Header';
 import FlipMove from 'react-flip-move';
 
 import PopUp from './Components/PopUp';
-import { data, col1data, col2data, col3data, col4data } from './data';
+import {  col1data, col2data, col3data, col4data } from './data';
 import HIddenComp from './Components/HIddenComp';
 
 function App() {
