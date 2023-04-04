@@ -14,3 +14,12 @@ backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.ubuntuMono{
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+.arima{
+    font-family: 'Arima', cursive;
+
+}
