@@ -6,6 +6,7 @@ import FlipMove from 'react-flip-move';
 
 import PopUp from './Components/PopUp';
 import { data, col1data, col2data, col3data, col4data } from './data';
+import HIddenComp from './Components/HIddenComp';
 
 function App() {
   const [copyClass, setCopyClass] = useState('');
@@ -36,6 +37,7 @@ function App() {
 
                 if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
                   return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
+                  return <HIddenComp />
               })}
           </FlipMove>
         </div>
@@ -48,6 +50,7 @@ function App() {
 
                 if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
                   return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
+                  return <HIddenComp />
               })}
           </FlipMove>
         </div>
@@ -59,6 +62,7 @@ function App() {
 
                 if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
                   return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
+                  return <HIddenComp />
               })}
           </FlipMove>
         </div>
@@ -70,6 +74,7 @@ function App() {
 
                 if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
                   return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
+                  return <HIddenComp />
               })}
           </FlipMove>
         </div>
