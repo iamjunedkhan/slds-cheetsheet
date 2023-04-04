@@ -464,6 +464,15 @@ export const col3data= [
     ]
 },
 {
+    'title': 'Grid',
+    'classes': [
+        'slds-grid',
+        'slds-grid_reverse',
+        'slds-grid_vertical',
+        'slds-grid_vertical-reverse',
+    ]
+},
+{
     'title': 'Column Gutters',
     'classes': [
         'slds-gutters',
