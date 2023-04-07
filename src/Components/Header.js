@@ -17,7 +17,7 @@ function Header({setSearch,search}) {
                 </div>
             </nav>
 
-            <p className='text-4xl font-bold ubuntuMono text-black text-center mx-8 mt-20'>Salesforce Lightning Design System </p>
+            <p className='text-4xl font-bold ubuntuMono text-black text-center mx-8 mt-20'>Salesforce Lightning Design System Cheetsheet</p>
             <p className='text-center arima  text-xl w-3/4 m-auto mb-8 mt-3'>The Salesforce Lightning Design System (SLDS) helps you build applications with the look and feel of Lightning Experience without writing a single line of CSS.</p>
         </div>
     )
