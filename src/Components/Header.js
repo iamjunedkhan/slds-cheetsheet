@@ -12,7 +12,7 @@ function Header({setSearch,search}) {
                 <h1 className="text-2xl font-bold clas text-black ubuntuMono ">SLDS|Cheatsheet</h1>
                 </div>
                 <div>
-                    <input onChange={(e)=>setSearch(e.target.value)} value={search} type="text" className=' focus:outline-none text-gray-600 px-2 py-1 mx-2 border-2  rounded-md border-black'   />
+                    <input onChange={(e)=>setSearch(e.target.value)} value={search} type="text" placeholder='Search Here...' autoFocus className=' focus:outline-none text-gray-600 px-2 py-1 mx-2 border-2  rounded-md border-black'   />
                     <a href='https://www.lightningdesignsystem.com/'   className='border-2 arima border-black px-2 py-1 rounded-lg'>Goto SLDS</a>
                 </div>
             </nav>
