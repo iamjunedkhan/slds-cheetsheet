@@ -20,7 +20,7 @@ function App() {
       <PopUp cls={copyClass} visible={visible} />
       {/* <h1 className='text-white'>Hello</h1> */}
 
-      <div className='flex flex-wrap'>
+      <div style={{"min-height":"350px"}} className='flex flex-wrap '>
 
 
         {/* { 
