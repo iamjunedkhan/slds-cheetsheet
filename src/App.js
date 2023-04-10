@@ -7,6 +7,7 @@ import FlipMove from 'react-flip-move';
 import PopUp from './Components/PopUp';
 import {  col1data, col2data, col3data, col4data } from './data';
 import HIddenComp from './Components/HIddenComp';
+import Footer from './Components/Footer';
 
 function App() {
   const [copyClass, setCopyClass] = useState('');
@@ -84,6 +85,8 @@ function App() {
         
 
       </div>
+
+      <Footer />
     </div>
   );
 }
