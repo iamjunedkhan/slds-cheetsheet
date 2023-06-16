@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react'
 import Para from './Para'
 
 import './card.css'
+import HIddenComp from './HIddenComp';
 
 const Card = forwardRef((props, ref) => (
 
@@ -21,6 +22,7 @@ const Card = forwardRef((props, ref) => (
                             cls=cls.replaceAll(props.search,`<span class="text-blue-500">${props.search}</span>`);
                             return <Para key={ele} cls={cls} setCopyClass={props.setCopyClass} setVisible={props.setVisible} />
                         }
+                        return <HIddenComp />
                     })
                     }
 
