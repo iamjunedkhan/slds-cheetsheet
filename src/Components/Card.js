@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react'
 import Para from './Para'
-import FlipMove from 'react-flip-move';
 
 import './card.css'
 
