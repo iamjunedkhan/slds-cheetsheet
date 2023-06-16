@@ -11,8 +11,8 @@ function Para({ cls, setCopyClass,setVisible }) {
     navigator.clipboard.writeText(event.target.innerText);
   }
   return (
-    <div onClick={handleClick} className='cursor-pointer transition-all duration-200 hover:font-bold border-b-2 p-1 py-2 pb-1 border-gray-500'>
-      {cls}</div>
+    <div  dangerouslySetInnerHTML={{__html: cls}} onClick={handleClick} className='cursor-pointer transition-all duration-200 hover:font-bold border-b-2 p-1 py-2 pb-1 border-gray-500'>
+      </div>
   )
 }
 

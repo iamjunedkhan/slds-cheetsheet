@@ -5,7 +5,7 @@ import Header from './Components/Header';
 import FlipMove from 'react-flip-move';
 
 import PopUp from './Components/PopUp';
-import {  col1data, col2data, col3data, col4data } from './data';
+import { col1data, col2data, col3data, col4data } from './data';
 import HIddenComp from './Components/HIddenComp';
 import Footer from './Components/Footer';
 
@@ -20,14 +20,14 @@ function App() {
       <PopUp cls={copyClass} visible={visible} />
       {/* <h1 className='text-white'>Hello</h1> */}
 
-      <div style={{"min-height":"350px"}} className='flex flex-wrap '>
+      <div style={{ "min-height": "350px" }} className='flex flex-wrap '>
 
 
         {/* { 
       data.map(d => {
 
         if(d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
-            return  <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} /> ;
+            return  <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} search={search} /> ;
         return  '';
       })} */}
 
@@ -35,23 +35,24 @@ function App() {
           <FlipMove>
             {
               col1data.map(d => {
-
-                if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
-                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
-                  return <HIddenComp />
+                let filterClasses = d.classes.filter(cls => cls.includes(search));
+                if (filterClasses.length > 0)
+                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} search={search} />;
+                return <HIddenComp />
               })}
           </FlipMove>
         </div>
 
-        
+
         <div className=' w-full sm:w-1/2 lg:w-1/4 md:w-1/3'>
           <FlipMove>
             {
               col2data.map(d => {
 
-                if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
-                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
-                  return <HIddenComp />
+                let filterClasses = d.classes.filter(cls => cls.includes(search));
+                if (filterClasses.length > 0)
+                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} search={search} />;
+                return <HIddenComp />
               })}
           </FlipMove>
         </div>
@@ -61,9 +62,10 @@ function App() {
             {
               col3data.map(d => {
 
-                if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
-                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
-                  return <HIddenComp />
+                let filterClasses = d.classes.filter(cls => cls.includes(search));
+                if (filterClasses.length > 0)
+                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} search={search} />;
+                return <HIddenComp />
               })}
           </FlipMove>
         </div>
@@ -73,16 +75,17 @@ function App() {
             {
               col4data.map(d => {
 
-                if (d.title.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
-                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} />;
-                  return <HIddenComp />
+                let filterClasses = d.classes.filter(cls => cls.includes(search));
+                if (filterClasses.length > 0)
+                  return <Card key={d.title} data={d} setCopyClass={setCopyClass} setVisible={setVisible} search={search} />;
+                return <HIddenComp />
               })}
           </FlipMove>
         </div>
 
 
 
-        
+
 
       </div>
 
